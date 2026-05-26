@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Erika Poindexter | Visible. — Digital Visibility for Small Businesses</title>
+  <meta name="description" content="Erika Poindexter is a Placer County-based marketing professional and licensed Realtor who built Visible. to help talented small business owners get found online."/>
+  <meta property="og:image" content="https://stayvisible.co/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Visible. by Erika Poindexter"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://stayvisible.co/og-image.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy:#1B2D3E; --navy-mid:#223548; --navy-lit:#2C4258;
+      --teal:#2AADA8; --teal-dark:#1E8A85; --teal-pale:#E4F5F4;
+      --mag:#E8357A; --mag-dark:#C4245F;
+      --cream:#FAF8F4; --white:#FFFFFF; --ink:#1B2D3E; --muted:#5C7080;
+      --bb:'Bebas Neue',sans-serif; --hur:'Hurricane',cursive; --dm:'DM Sans',sans-serif;
+      --max:1100px; --ease:0.28s cubic-bezier(.4,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--dm);background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    img{max-width:100%;display:block;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+    .fu{opacity:0;animation:fadeUp .65s cubic-bezier(.4,0,.2,1) forwards;}
+    .d1{animation-delay:.1s;}.d2{animation-delay:.22s;}.d3{animation-delay:.36s;}.d4{animation-delay:.5s;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;padding:0 44px;display:flex;align-items:center;justify-content:space-between;background:rgba(27,45,62,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,173,168,.15);}
+    .nav-brand{display:flex;flex-direction:column;line-height:1.1;gap:1px;}
+    .nav-brand .wm{font-family:var(--bb);font-size:1.5rem;letter-spacing:.06em;color:var(--white);}
+    .nav-brand .wm span{color:var(--teal);}
+    .nav-brand .sub{font-size:.54rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.3);}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+    .nav-links a{font-size:.8rem;font-weight:500;letter-spacing:.04em;color:rgba(255,255,255,.55);transition:color var(--ease);}
+    .nav-links a:hover{color:var(--white);}
+    .nav-pill{background:var(--mag)!important;color:var(--white)!important;padding:9px 22px;border-radius:100px;font-weight:700!important;transition:background var(--ease),transform var(--ease)!important;}
+    .nav-pill:hover{background:var(--mag-dark)!important;transform:translateY(-1px);}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+    .mob-menu{display:none;position:fixed;top:68px;left:0;right:0;z-index:299;background:var(--navy);border-top:1px solid rgba(42,173,168,.12);padding:28px 44px;flex-direction:column;}
+    .mob-menu.open{display:flex;}
+    .mob-menu a{font-size:.95rem;font-weight:500;color:rgba(255,255,255,.7);padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07);}
+    .mob-menu .mp{background:var(--mag);color:var(--white);text-align:center;padding:14px;border-radius:100px;font-weight:700;margin-top:16px;border:none;}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:140px 44px 80px;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(42,173,168,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(42,173,168,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;}
+    .page-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 50%,rgba(42,173,168,.12) 0%,transparent 65%);pointer-events:none;}
+    .page-hero-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;}
+    .kicker{font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+    .kicker::before{content:'';width:28px;height:2px;background:var(--teal);flex-shrink:0;}
+    .ph-hl-top{font-family:var(--bb);font-size:clamp(3rem,6vw,5.2rem);letter-spacing:.05em;line-height:.9;color:var(--white);text-transform:uppercase;display:block;}
+    .ph-script{font-family:var(--hur);font-size:clamp(3.8rem,7.5vw,6.6rem);color:var(--mag);line-height:.88;display:block;margin-top:-10px;margin-left:-4px;text-shadow:0 3px 32px rgba(232,53,122,.35);}
+
+    /* WRAP */
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 44px;}
+    .section{padding:100px 0;}
+    .s-white{background:var(--white);}
+    .s-cream{background:var(--cream);}
+    .s-navy{background:var(--navy);}
+    .s-teal{background:var(--teal-pale);}
+
+    /* ABOUT SPLIT */
+    .about-grid{display:grid;grid-template-columns:420px 1fr;gap:80px;align-items:start;}
+    .about-img-wrap{position:relative;}
+    .about-img{width:100%;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:var(--teal);}
+    .about-img img{width:100%;height:100%;object-fit:cover;object-position:center 10%;}
+    .a-chip{position:absolute;background:var(--navy);border:1.5px solid rgba(42,173,168,.28);border-radius:12px;padding:12px 16px;line-height:1.3;}
+    .a-chip strong{display:block;font-family:var(--bb);font-size:.95rem;letter-spacing:.05em;color:var(--teal);}
+    .a-chip span{font-size:.7rem;color:rgba(255,255,255,.45);}
+    .chip-br{bottom:-18px;right:-20px;}
+    .chip-tl{top:24px;left:-24px;}
+
+    .sh{font-family:var(--bb);font-size:clamp(2.4rem,4vw,3.4rem);letter-spacing:.05em;line-height:.92;text-transform:uppercase;color:var(--ink);}
+    .sh.dark{color:var(--white);}
+    .sh .t{color:var(--teal);}
+    .script-line{font-family:var(--hur);font-size:clamp(3rem,5.5vw,5rem);color:var(--mag);line-height:.88;display:block;margin-top:-8px;margin-left:-3px;text-shadow:0 2px 28px rgba(232,53,122,.28);margin-bottom:24px;}
+    .rule{width:44px;height:3px;border-radius:2px;background:var(--teal);margin-bottom:24px;}
+    .body-copy{font-size:.96rem;line-height:1.82;color:var(--muted);}
+    .body-copy.dark{color:rgba(255,255,255,.58);}
+    .body-copy p{margin-bottom:16px;}
+    .badges{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px;}
+    .badge{background:var(--cream);border:1px solid rgba(42,173,168,.18);border-radius:8px;padding:6px 14px;font-size:.75rem;font-weight:500;color:var(--ink);}
+
+    /* STORY TIMELINE */
+    .timeline{display:flex;flex-direction:column;gap:0;margin-top:48px;}
+    .tl-item{display:grid;grid-template-columns:80px 1fr;gap:28px;position:relative;}
+    .tl-item:not(:last-child)::after{content:'';position:absolute;left:39px;top:56px;bottom:0;width:2px;background:rgba(42,173,168,.18);}
+    .tl-year{font-family:var(--bb);font-size:1.1rem;letter-spacing:.06em;color:var(--teal);padding-top:14px;flex-shrink:0;}
+    .tl-body{padding-bottom:44px;}
+    .tl-body h4{font-family:var(--bb);font-size:1.1rem;letter-spacing:.04em;color:var(--ink);margin-bottom:8px;margin-top:14px;}
+    .tl-body p{font-size:.88rem;color:var(--muted);line-height:1.75;}
+    .tl-item:last-child .tl-body{padding-bottom:0;}
+
+    /* VALUES */
+    .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;}
+    .val-card{background:var(--white);border:1px solid rgba(42,173,168,.15);border-radius:16px;padding:32px 28px;transition:border-color var(--ease),transform var(--ease);}
+    .val-card:hover{border-color:var(--teal);transform:translateY(-4px);}
+    .val-icon{font-size:1.8rem;margin-bottom:14px;}
+    .val-card h4{font-family:var(--bb);font-size:1.1rem;letter-spacing:.04em;color:var(--ink);margin-bottom:8px;}
+    .val-card p{font-size:.86rem;color:var(--muted);line-height:1.7;}
+
+    /* CTA BAND */
+    .cta-band{background:var(--mag);padding:80px 0;position:relative;overflow:hidden;}
+    .cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 85% 50%,rgba(255,255,255,.08) 0%,transparent 55%);}
+    .cta-ghost{position:absolute;bottom:-40px;right:-10px;font-family:var(--bb);font-size:clamp(100px,15vw,180px);letter-spacing:.04em;color:rgba(255,255,255,.04);line-height:1;pointer-events:none;user-select:none;}
+    .cta-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:0 44px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+    .cta-top{font-family:var(--bb);font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.05em;line-height:.9;color:var(--white);text-transform:uppercase;display:block;}
+    .cta-script{font-family:var(--hur);font-size:clamp(2.8rem,5vw,4.6rem);color:var(--white);line-height:.88;display:block;margin-top:-6px;margin-left:-3px;text-shadow:0 2px 20px rgba(0,0,0,.12);}
+    .cta-sub{font-size:.95rem;color:rgba(255,255,255,.75);margin-top:14px;max-width:460px;line-height:1.78;}
+    .btn-white-solid{background:var(--white);color:var(--mag);font-weight:700;font-size:.88rem;letter-spacing:.04em;padding:17px 40px;border-radius:100px;white-space:nowrap;transition:transform var(--ease),box-shadow var(--ease);box-shadow:0 4px 20px rgba(0,0,0,.15);}
+    .btn-white-solid:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2);}
+
+    /* FOOTER */
+    footer{background:var(--navy);padding:68px 0 36px;border-top:1px solid rgba(42,173,168,.1);}
+    .foot-grid{max-width:var(--max);margin:0 auto;padding:0 44px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+    .fb .wm{font-family:var(--bb);font-size:1.6rem;letter-spacing:.06em;color:var(--white);}
+    .fb .wm span{color:var(--teal);}
+    .fb .sub{display:block;font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px;}
+    .fb p{font-size:.83rem;color:rgba(255,255,255,.42);line-height:1.78;max-width:300px;}
+    .fc h4{font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:16px;}
+    .fl{list-style:none;display:flex;flex-direction:column;gap:11px;}
+    .fl a{font-size:.84rem;color:rgba(255,255,255,.5);transition:color var(--ease);}
+    .fl a:hover{color:var(--teal);}
+    .foot-bot{max-width:var(--max);margin:0 auto;padding:22px 44px 0;border-top:1px solid rgba(255,255,255,.05);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .foot-bot p{font-size:.74rem;color:rgba(255,255,255,.25);}
+    .soc{display:flex;gap:8px;}
+    .sb{width:32px;height:32px;border-radius:8px;border:1px solid rgba(42,173,168,.18);display:flex;align-items:center;justify-content:center;font-size:.64rem;font-weight:700;color:rgba(255,255,255,.35);cursor:pointer;transition:all var(--ease);}
+    .sb:hover{border-color:var(--teal);color:var(--teal);background:rgba(42,173,168,.08);}
+
+    @media(max-width:960px){
+      nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}
+      .mob-menu{padding:24px;}
+      .page-hero{padding:120px 24px 60px;}
+      .wrap{padding:0 24px;}
+      .about-grid{grid-template-columns:1fr;gap:48px;}
+      .about-img-wrap{max-width:360px;}
+      .values-grid{grid-template-columns:1fr;}
+      .foot-grid{grid-template-columns:1fr;gap:32px;}
+      .foot-grid,.foot-bot{padding-left:24px;padding-right:24px;}
+      .cta-inner{flex-direction:column;align-items:flex-start;padding:0 24px;}
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Erika Poindexter","jobTitle":"Digital Visibility Specialist","url":"https://stayvisible.co/about.html","worksFor":{"@type":"LocalBusiness","name":"Visible. by Erika Poindexter","url":"https://stayvisible.co"},"address":{"@type":"PostalAddress","addressLocality":"Loomis","addressRegion":"CA","addressCountry":"US"}}
+  </script>
+</head>
+<body>
+<nav>
+  <div class="nav-brand"><span class="wm">VISIBLE<span>.</span></span><span class="sub">by Erika Poindexter</span></div>
+  <ul class="nav-links">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/work">Portfolio</a></li>
+    <li><a href="/about" style="color:var(--teal);">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://therealerikap.myflodesk.com/visiblecontact" class="nav-pill" target="_blank">Book a Free Call</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="/services">Services</a><a href="/work">Portfolio</a>
+  <a href="/about">About</a><a href="/blog">Blog</a>
+  <a href="https://therealerikap.myflodesk.com/visiblecontact" class="mp" target="_blank">Book a Free Call →</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="kicker fu">About Erika</div>
+    <span class="ph-hl-top fu d1">THE PERSON</span>
+    <span class="ph-script fu d2">behind visible.</span>
+  </div>
+</div>
+
+<section class="section s-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap fu">
+        <div class="about-img">
+          <img src="ErikaHeadshot.png" alt="Erika Poindexter — founder of Visible., digital visibility specialist based in Placer County CA"/>
+        </div>
+        <div class="a-chip chip-br"><strong>PLACER COUNTY</strong><span>In-Person or Remote</span></div>
+        <div class="a-chip chip-tl"><strong>DRE #01903694</strong><span>Licensed Realtor</span></div>
+      </div>
+      <div class="fu d1">
+        <div class="kicker">My story</div>
+        <span class="sh">I BUILT THIS</span>
+        <span class="script-line">for them.</span>
+        <div class="body-copy">
+          <p>I'm Erika Poindexter — a Placer County-based marketing professional and licensed Realtor with a deep love for small business owners who are exceptional at their craft.</p>
+          <p>I kept meeting talented people — seamstresses, music teachers, estheticians, restaurant owners — who couldn't be found online. Not because they weren't good enough. Because no one had helped them show up.</p>
+          <p>My background is in marketing, sales, and real estate. I understand both the digital side and the small business owner's reality — the long days, the tight budgets, the feeling that marketing is something that happens to other people's businesses, not yours.</p>
+          <p>I built Visible. to change that. I keep my client list intentionally small. Every business gets real attention, a real strategy, and a real person who picks up the phone. No agency handoffs. No disappearing after launch day. Just me — and a process that works.</p>
+        </div>
+        <div class="badges" style="margin-top:28px;">
+          <span class="badge">📍 Placer County, CA</span>
+          <span class="badge">🎓 BA in Marketing</span>
+          <span class="badge">🏡 Licensed Realtor DRE #01903694</span>
+          <span class="badge">💻 In-Person or Remote</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section s-cream">
+  <div class="wrap">
+    <div class="kicker fu">How I got here</div>
+    <span class="sh fu d1">THE</span>
+    <span class="script-line fu d1">backstory.</span>
+    <div class="timeline">
+      <div class="tl-item fu d1">
+        <div class="tl-year">2010</div>
+        <div class="tl-body"><h4>BA IN MARKETING</h4><p>Graduated with a marketing degree and immediately fell in love with the intersection of strategy, story, and getting people to actually pay attention.</p></div>
+      </div>
+      <div class="tl-item fu d2">
+        <div class="tl-year">2012</div>
+        <div class="tl-body"><h4>LICENSED IN REAL ESTATE</h4><p>Got my California Realtor license (DRE #01903694). Learned fast that real estate is mostly marketing — and that most people do it wrong.</p></div>
+      </div>
+      <div class="tl-item fu d3">
+        <div class="tl-year">2018</div>
+        <div class="tl-body"><h4>THE PATTERN EMERGES</h4><p>Started noticing the same thing over and over: talented people — a seamstress in Roseville, a piano teacher in Rocklin — completely invisible online. Not because they weren't great. Because no one had helped them show up.</p></div>
+      </div>
+      <div class="tl-item fu d4">
+        <div class="tl-year">2024</div>
+        <div class="tl-body"><h4>VISIBLE. LAUNCHES</h4><p>Built the thing that was missing. Websites, Google Business optimization, and done-for-you content — specifically for skilled small business owners in growth mode. Placer County and beyond.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section s-white">
+  <div class="wrap">
+    <div class="kicker fu">How I work</div>
+    <span class="sh fu d1">THE</span>
+    <span class="script-line fu d1">approach.</span>
+    <div class="values-grid">
+      <div class="val-card fu d1">
+        <div class="val-icon">🎯</div>
+        <h4>SMALL LIST ON PURPOSE</h4>
+        <p>I cap my client roster so every business gets real attention. You're not a ticket number. You're the only esthetician I'm working with this month.</p>
+      </div>
+      <div class="val-card fu d2">
+        <div class="val-icon">📞</div>
+        <h4>I ACTUALLY PICK UP</h4>
+        <p>No account managers. No support queues. When you need something, you reach me directly. That's the deal.</p>
+      </div>
+      <div class="val-card fu d3">
+        <div class="val-icon">📈</div>
+        <h4>BUILT TO COMPOUND</h4>
+        <p>Every blog post, every GBP update, every page we build — it keeps working after I publish it. Visibility that grows over time, not just on launch day.</p>
+      </div>
+      <div class="val-card fu d1">
+        <div class="val-icon">🔍</div>
+        <h4>SEO FIRST, ALWAYS</h4>
+        <p>Pretty sites that nobody finds are just expensive business cards. Every decision I make — structure, copy, content — is made with search in mind.</p>
+      </div>
+      <div class="val-card fu d2">
+        <div class="val-icon">✍️</div>
+        <h4>YOUR VOICE, NOT MINE</h4>
+        <p>The copy on your site sounds like you — not like a generic service business. I interview my clients. I learn the words they actually use. Then I write it.</p>
+      </div>
+      <div class="val-card fu d3">
+        <div class="val-icon">🤝</div>
+        <h4>NO DISAPPEARING ACT</h4>
+        <p>Launch day isn't the finish line. Monthly plans mean I'm in your corner every single month — keeping things fresh, optimized, and working.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-ghost" aria-hidden="true">VISIBLE.</div>
+  <div class="cta-inner">
+    <div>
+      <span class="cta-top">READY TO</span>
+      <span class="cta-script">get visible?</span>
+      <p class="cta-sub">Book a free 20-minute call. No pitch, no pressure — just a real conversation about what it would take to get you found.</p>
+    </div>
+    <a href="https://therealerikap.myflodesk.com/visiblecontact" target="_blank" class="btn-white-solid">Book Your Free Call →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-grid">
+    <div class="fb"><div class="wm">VISIBLE<span>.</span></div><span class="sub">by Erika Poindexter</span><p>Websites, Google Business optimization, and done-for-you content for skilled small business owners. Placer County, CA — in-person or remotely.</p></div>
+    <div class="fc"><h4>Services</h4><ul class="fl"><li><a href="/services/stay-visible">Stay Visible</a></li><li><a href="/services/grow-visible">Grow Visible</a></li><li><a href="/services/full-visibility">Full Visibility</a></li><li><a href="/services/gmb-maximizer">GMB Maximizer</a></li></ul></div>
+    <div class="fc"><h4>Connect</h4><ul class="fl"><li><a href="/contact">Book a Free Call</a></li><li><a href="tel:+15303337207">(530) 333-7207</a></li><li><a href="mailto:erika@stayvisible.co">erika@stayvisible.co</a></li><li><a href="https://www.poindexterteam.com" target="_blank" rel="noopener">Poindexter Real Estate →</a></li></ul></div>
+  </div>
+  <div class="foot-bot"><p>© 2025 Visible. by Erika Poindexter · Placer County, CA · All Rights Reserved</p><div class="soc"><div class="sb">f</div><div class="sb">in</div><div class="sb">ig</div></div></div>
+</footer>
+<script>function toggleMenu(){document.getElementById('mobMenu').classList.toggle('open');}</script>
+</body>
+</html>

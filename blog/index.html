@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Visible. by Erika Poindexter — Small Business Visibility Tips</title>
+  <meta name="description" content="Practical tips on local SEO, Google Business optimization, website strategy, and getting found online — written for skilled small business owners by Erika Poindexter."/>
+  <meta property="og:image" content="https://stayvisible.co/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Visible. by Erika Poindexter"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://stayvisible.co/og-image.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--navy:#1B2D3E;--navy-mid:#223548;--teal:#2AADA8;--teal-dark:#1E8A85;--teal-pale:#E4F5F4;--mag:#E8357A;--mag-dark:#C4245F;--cream:#FAF8F4;--white:#FFFFFF;--ink:#1B2D3E;--muted:#5C7080;--bb:'Bebas Neue',sans-serif;--hur:'Hurricane',cursive;--dm:'DM Sans',sans-serif;--max:1100px;--ease:0.28s cubic-bezier(.4,0,.2,1);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--dm);background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+    .fu{opacity:0;animation:fadeUp .65s cubic-bezier(.4,0,.2,1) forwards;}
+    .d1{animation-delay:.1s;}.d2{animation-delay:.22s;}.d3{animation-delay:.36s;}.d4{animation-delay:.5s;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;padding:0 44px;display:flex;align-items:center;justify-content:space-between;background:rgba(27,45,62,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,173,168,.15);}
+    .nav-brand{display:flex;flex-direction:column;line-height:1.1;gap:1px;}
+    .nav-brand .wm{font-family:var(--bb);font-size:1.5rem;letter-spacing:.06em;color:var(--white);}
+    .nav-brand .wm span{color:var(--teal);}
+    .nav-brand .sub{font-size:.54rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.3);}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+    .nav-links a{font-size:.8rem;font-weight:500;letter-spacing:.04em;color:rgba(255,255,255,.55);transition:color var(--ease);}
+    .nav-links a:hover{color:var(--white);}
+    .nav-pill{background:var(--mag)!important;color:var(--white)!important;padding:9px 22px;border-radius:100px;font-weight:700!important;}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+    .mob-menu{display:none;position:fixed;top:68px;left:0;right:0;z-index:299;background:var(--navy);border-top:1px solid rgba(42,173,168,.12);padding:28px 44px;flex-direction:column;}
+    .mob-menu.open{display:flex;}
+    .mob-menu a{font-size:.95rem;font-weight:500;color:rgba(255,255,255,.7);padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07);}
+    .mob-menu .mp{background:var(--mag);color:var(--white);text-align:center;padding:14px;border-radius:100px;font-weight:700;margin-top:16px;border:none;}
+    .page-hero{background:var(--navy);padding:140px 44px 80px;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(42,173,168,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(42,173,168,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;}
+    .page-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 50%,rgba(42,173,168,.12) 0%,transparent 65%);pointer-events:none;}
+    .page-hero-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;}
+    .kicker{font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+    .kicker::before{content:'';width:28px;height:2px;background:var(--teal);flex-shrink:0;}
+    .kicker.dim{color:rgba(255,255,255,.38);}.kicker.dim::before{background:rgba(255,255,255,.2);}
+    .ph-hl-top{font-family:var(--bb);font-size:clamp(3rem,6vw,5.2rem);letter-spacing:.05em;line-height:.9;color:var(--white);text-transform:uppercase;display:block;}
+    .ph-script{font-family:var(--hur);font-size:clamp(3.8rem,7.5vw,6.6rem);color:var(--mag);line-height:.88;display:block;margin-top:-10px;margin-left:-4px;text-shadow:0 3px 32px rgba(232,53,122,.35);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 44px;}
+    .section{padding:100px 0;}
+    .s-white{background:var(--white);}.s-cream{background:var(--cream);}.s-navy{background:var(--navy);}
+    .sh{font-family:var(--bb);font-size:clamp(2.2rem,3.8vw,3.2rem);letter-spacing:.05em;line-height:.92;text-transform:uppercase;color:var(--ink);}
+    .script-line{font-family:var(--hur);font-size:clamp(2.8rem,5vw,4.6rem);color:var(--mag);line-height:.88;display:block;margin-top:-8px;margin-left:-3px;text-shadow:0 2px 28px rgba(232,53,122,.28);margin-bottom:32px;}
+
+    /* Blog layout */
+    .blog-layout{display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .blog-posts{display:flex;flex-direction:column;gap:28px;}
+    .post-card{background:var(--white);border:1px solid rgba(42,173,168,.12);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;transition:border-color var(--ease),transform var(--ease),box-shadow var(--ease);}
+    .post-card:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 8px 28px rgba(42,173,168,.1);}
+    .post-thumb{background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
+    .post-thumb.mag{background:var(--mag);}
+    .post-thumb.navy{background:var(--navy);}
+    .post-body{padding:24px 26px;}
+    .post-meta{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+    .post-cat{font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);background:var(--teal-pale);padding:3px 10px;border-radius:100px;}
+    .post-date{font-size:.72rem;color:var(--muted);}
+    .post-title{font-family:var(--bb);font-size:1.2rem;letter-spacing:.04em;color:var(--ink);margin-bottom:8px;line-height:1.1;}
+    .post-excerpt{font-size:.84rem;color:var(--muted);line-height:1.68;margin-bottom:14px;}
+    .post-read{font-size:.78rem;font-weight:700;color:var(--teal);display:flex;align-items:center;gap:6px;transition:gap var(--ease);}
+    .post-card:hover .post-read{gap:12px;}
+    .post-read::after{content:'→';}
+
+    /* Sidebar */
+    .sidebar{position:sticky;top:90px;display:flex;flex-direction:column;gap:24px;}
+    .sidebar-box{background:var(--white);border:1px solid rgba(42,173,168,.12);border-radius:14px;padding:24px 22px;}
+    .sidebar-title{font-family:var(--bb);font-size:1rem;letter-spacing:.06em;color:var(--ink);margin-bottom:16px;}
+    .topic-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+    .topic-list li a{font-size:.86rem;color:var(--muted);display:flex;align-items:center;gap:8px;transition:color var(--ease);}
+    .topic-list li a:hover{color:var(--teal);}
+    .topic-list li a::before{content:'→';color:var(--teal);font-size:.75rem;}
+    .sidebar-cta{background:var(--navy);border-radius:14px;padding:28px 22px;text-align:center;}
+    .sidebar-cta .sc-hl{font-family:var(--bb);font-size:1.3rem;letter-spacing:.05em;color:var(--white);margin-bottom:4px;}
+    .sidebar-cta .sc-script{font-family:var(--hur);font-size:2rem;color:var(--mag);line-height:.9;display:block;margin-bottom:14px;text-shadow:0 2px 20px rgba(232,53,122,.3);}
+    .sidebar-cta p{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:18px;}
+    .btn-mag-sm{display:block;background:var(--mag);color:var(--white);font-family:var(--bb);font-size:.9rem;letter-spacing:.08em;padding:12px;border-radius:100px;text-align:center;transition:background var(--ease);}
+    .btn-mag-sm:hover{background:var(--mag-dark);}
+
+    /* Empty state */
+    .empty-state{background:var(--teal-pale);border:1px solid rgba(42,173,168,.2);border-radius:16px;padding:48px 36px;text-align:center;}
+    .es-icon{font-size:2.5rem;margin-bottom:16px;}
+    .es-title{font-family:var(--bb);font-size:1.4rem;letter-spacing:.05em;color:var(--teal);margin-bottom:10px;}
+    .es-body{font-size:.9rem;color:var(--muted);line-height:1.78;}
+
+    .cta-band{background:var(--mag);padding:80px 0;position:relative;overflow:hidden;}
+    .cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 85% 50%,rgba(255,255,255,.08) 0%,transparent 55%);}
+    .cta-ghost{position:absolute;bottom:-40px;right:-10px;font-family:var(--bb);font-size:clamp(100px,15vw,180px);letter-spacing:.04em;color:rgba(255,255,255,.04);line-height:1;pointer-events:none;user-select:none;}
+    .cta-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:0 44px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+    .cta-top{font-family:var(--bb);font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.05em;line-height:.9;color:var(--white);text-transform:uppercase;display:block;}
+    .cta-script{font-family:var(--hur);font-size:clamp(2.8rem,5vw,4.6rem);color:var(--white);line-height:.88;display:block;margin-top:-6px;margin-left:-3px;text-shadow:0 2px 20px rgba(0,0,0,.12);}
+    .cta-sub{font-size:.95rem;color:rgba(255,255,255,.75);margin-top:14px;max-width:460px;line-height:1.78;}
+    .btn-white-solid{background:var(--white);color:var(--mag);font-weight:700;font-size:.88rem;letter-spacing:.04em;padding:17px 40px;border-radius:100px;white-space:nowrap;transition:transform var(--ease),box-shadow var(--ease);box-shadow:0 4px 20px rgba(0,0,0,.15);}
+    .btn-white-solid:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2);}
+    footer{background:var(--navy);padding:68px 0 36px;border-top:1px solid rgba(42,173,168,.1);}
+    .foot-grid{max-width:var(--max);margin:0 auto;padding:0 44px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+    .fb .wm{font-family:var(--bb);font-size:1.6rem;letter-spacing:.06em;color:var(--white);}
+    .fb .wm span{color:var(--teal);}
+    .fb .sub{display:block;font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px;}
+    .fb p{font-size:.83rem;color:rgba(255,255,255,.42);line-height:1.78;max-width:300px;}
+    .fc h4{font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:16px;}
+    .fl{list-style:none;display:flex;flex-direction:column;gap:11px;}
+    .fl a{font-size:.84rem;color:rgba(255,255,255,.5);transition:color var(--ease);}
+    .fl a:hover{color:var(--teal);}
+    .foot-bot{max-width:var(--max);margin:0 auto;padding:22px 44px 0;border-top:1px solid rgba(255,255,255,.05);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .foot-bot p{font-size:.74rem;color:rgba(255,255,255,.25);}
+    .soc{display:flex;gap:8px;}
+    .sb{width:32px;height:32px;border-radius:8px;border:1px solid rgba(42,173,168,.18);display:flex;align-items:center;justify-content:center;font-size:.64rem;font-weight:700;color:rgba(255,255,255,.35);cursor:pointer;transition:all var(--ease);}
+    .sb:hover{border-color:var(--teal);color:var(--teal);background:rgba(42,173,168,.08);}
+    @media(max-width:960px){
+      nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}
+      .page-hero{padding:120px 24px 60px;}.wrap{padding:0 24px;}
+      .blog-layout{grid-template-columns:1fr;}
+      .sidebar{position:static;}
+      .post-card{grid-template-columns:1fr;}
+      .post-thumb{min-height:120px;}
+      .foot-grid{grid-template-columns:1fr;gap:32px;}
+      .foot-grid,.foot-bot,.cta-inner{padding-left:24px;padding-right:24px;}
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"Visible. Blog","url":"https://stayvisible.co/blog/","description":"Practical tips on local SEO, Google Business optimization, and getting found online for small business owners.","publisher":{"@type":"Person","name":"Erika Poindexter","url":"https://stayvisible.co"}}
+  </script>
+</head>
+<body>
+<nav>
+  <div class="nav-brand"><span class="wm">VISIBLE<span>.</span></span><span class="sub">by Erika Poindexter</span></div>
+  <ul class="nav-links">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/work">Portfolio</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/" style="color:var(--teal);">Blog</a></li>
+    <li><a href="https://therealerikap.myflodesk.com/visiblecontact" class="nav-pill" target="_blank">Book a Free Call</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="/services">Services</a><a href="/work">Portfolio</a>
+  <a href="/about">About</a><a href="/">Blog</a>
+  <a href="https://therealerikap.myflodesk.com/visiblecontact" class="mp" target="_blank">Book a Free Call →</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="kicker dim fu">Tips + insights</div>
+    <span class="ph-hl-top fu d1">LEARN TO</span>
+    <span class="ph-script fu d2">stay visible.</span>
+  </div>
+</div>
+
+<section class="section s-cream">
+  <div class="wrap">
+    <div class="blog-layout">
+      <div>
+        <div class="kicker fu">Latest posts</div>
+        <span class="sh fu d1">PRACTICAL TIPS.</span>
+        <span class="script-line fu d1">real results.</span>
+
+        <div class="blog-posts">
+          <!-- Seed post 1 -->
+          <a href="#" class="post-card fu d1">
+            <div class="post-thumb">🔍</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-cat">Google Business</span>
+                <span class="post-date">January 2025</span>
+              </div>
+              <div class="post-title">WHY YOUR GOOGLE BUSINESS PROFILE IS YOUR MOST VALUABLE FREE TOOL</div>
+              <p class="post-excerpt">Most small business owners have a Google Business Profile that's 40% complete. Here's what the other 60% is costing you — and how to fix it in an afternoon.</p>
+              <span class="post-read">Read more</span>
+            </div>
+          </a>
+
+          <!-- Seed post 2 -->
+          <a href="#" class="post-card fu d2">
+            <div class="post-thumb mag">📝</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-cat">Local SEO</span>
+                <span class="post-date">January 2025</span>
+              </div>
+              <div class="post-title">5 REASONS YOUR COMPETITORS ARE OUTRANKING YOU ON GOOGLE (AND HOW TO FIX IT)</div>
+              <p class="post-excerpt">Local search isn't a mystery. There are specific, fixable reasons why someone else shows up when your potential clients search for what you do. Let's go through them one by one.</p>
+              <span class="post-read">Read more</span>
+            </div>
+          </a>
+
+          <!-- Seed post 3 -->
+          <a href="#" class="post-card fu d3">
+            <div class="post-thumb navy">⭐</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-cat">Reviews</span>
+                <span class="post-date">February 2025</span>
+              </div>
+              <div class="post-title">HOW TO RESPOND TO NEGATIVE REVIEWS WITHOUT MAKING IT WORSE</div>
+              <p class="post-excerpt">A bad review isn't the end of the world. How you respond to it matters more than the review itself — and most business owners get this wrong. Here's the formula that works.</p>
+              <span class="post-read">Read more</span>
+            </div>
+          </a>
+
+          <!-- Seed post 4 -->
+          <a href="#" class="post-card fu d4">
+            <div class="post-thumb">🌐</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-cat">Website Strategy</span>
+                <span class="post-date">February 2025</span>
+              </div>
+              <div class="post-title">WHAT MAKES A SMALL BUSINESS WEBSITE ACTUALLY CONVERT VISITORS INTO CLIENTS</div>
+              <p class="post-excerpt">Pretty isn't enough. Your website needs to answer three questions in under 10 seconds. Most sites fail all three. Here's what those questions are and how to answer them.</p>
+              <span class="post-read">Read more</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar fu d2">
+        <div class="sidebar-box">
+          <div class="sidebar-title">TOPICS</div>
+          <ul class="topic-list">
+            <li><a href="#">Google Business Profile</a></li>
+            <li><a href="#">Local SEO</a></li>
+            <li><a href="#">Website Strategy</a></li>
+            <li><a href="#">Reviews + Reputation</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Placer County Business</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-cta">
+          <div class="sc-hl">READY TO</div>
+          <span class="sc-script">get visible?</span>
+          <p>Stop reading about it and let me do it for you. Book a free 20-minute call.</p>
+          <a href="/contact" class="btn-mag-sm">BOOK A FREE CALL →</a>
+        </div>
+
+        <div class="sidebar-box">
+          <div class="sidebar-title">ABOUT ERIKA</div>
+          <p style="font-size:.84rem;color:var(--muted);line-height:1.72;margin-bottom:14px;">Erika Poindexter is a Placer County-based marketing professional and licensed Realtor who built Visible. to help talented small business owners get found online.</p>
+          <a href="/about" style="font-size:.82rem;font-weight:700;color:var(--teal);display:inline-flex;align-items:center;gap:6px;">More about Erika →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-ghost" aria-hidden="true">VISIBLE.</div>
+  <div class="cta-inner">
+    <div>
+      <span class="cta-top">DONE READING?</span>
+      <span class="cta-script">let's build.</span>
+      <p class="cta-sub">Book a free 20-minute call and let's turn what you've learned into actual results for your business.</p>
+    </div>
+    <a href="https://therealerikap.myflodesk.com/visiblecontact" target="_blank" class="btn-white-solid">Book Your Free Call →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-grid">
+    <div class="fb"><div class="wm">VISIBLE<span>.</span></div><span class="sub">by Erika Poindexter</span><p>Websites, Google Business optimization, and done-for-you content for skilled small business owners. Placer County, CA — in-person or remotely.</p></div>
+    <div class="fc"><h4>Services</h4><ul class="fl"><li><a href="/services/stay-visible">Stay Visible</a></li><li><a href="/services/grow-visible">Grow Visible</a></li><li><a href="/services/full-visibility">Full Visibility</a></li><li><a href="/services/gmb-maximizer">GMB Maximizer</a></li></ul></div>
+    <div class="fc"><h4>Connect</h4><ul class="fl"><li><a href="/contact">Book a Free Call</a></li><li><a href="tel:+15303337207">(530) 333-7207</a></li><li><a href="mailto:erika@stayvisible.co">erika@stayvisible.co</a></li><li><a href="/about">About Erika</a></li></ul></div>
+  </div>
+  <div class="foot-bot"><p>© 2025 Visible. by Erika Poindexter · stayvisible.co · All Rights Reserved</p><div class="soc"><div class="sb">f</div><div class="sb">in</div><div class="sb">ig</div></div></div>
+</footer>
+<script>function toggleMenu(){document.getElementById('mobMenu').classList.toggle('open');}</script>
+</body>
+</html>

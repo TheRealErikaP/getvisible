@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIY SEO SOP | Visible. by Erika Poindexter — Get Found on Google</title>
+  <meta name="description" content="A custom SEO audit and step-by-step action plan built specifically for your business. Know exactly what to fix, in what order, to start showing up on Google. From $197."/>
+  <meta property="og:image" content="https://stayvisible.co/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Visible. by Erika Poindexter"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://stayvisible.co/og-image.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--navy:#1B2D3E;--navy-mid:#223548;--teal:#2AADA8;--teal-dark:#1E8A85;--teal-pale:#E4F5F4;--mag:#E8357A;--mag-dark:#C4245F;--cream:#FAF8F4;--white:#FFFFFF;--ink:#1B2D3E;--muted:#5C7080;--bb:'Bebas Neue',sans-serif;--hur:'Hurricane',cursive;--dm:'DM Sans',sans-serif;--max:1100px;--ease:0.28s cubic-bezier(.4,0,.2,1);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--dm);background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+    .fu{opacity:0;animation:fadeUp .65s cubic-bezier(.4,0,.2,1) forwards;}
+    .d1{animation-delay:.1s;}.d2{animation-delay:.22s;}.d3{animation-delay:.36s;}.d4{animation-delay:.5s;}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;padding:0 44px;display:flex;align-items:center;justify-content:space-between;background:rgba(27,45,62,.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,173,168,.15);}
+    .nav-brand{display:flex;flex-direction:column;line-height:1.1;gap:1px;}
+    .nav-brand .wm{font-family:var(--bb);font-size:1.5rem;letter-spacing:.06em;color:var(--white);}
+    .nav-brand .wm span{color:var(--teal);}
+    .nav-brand .sub{font-size:.54rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.3);}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+    .nav-links a{font-size:.8rem;font-weight:500;letter-spacing:.04em;color:rgba(255,255,255,.55);transition:color var(--ease);}
+    .nav-links a:hover{color:var(--white);}
+    .nav-pill{background:var(--mag)!important;color:var(--white)!important;padding:9px 22px;border-radius:100px;font-weight:700!important;}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+    .mob-menu{display:none;position:fixed;top:68px;left:0;right:0;z-index:299;background:var(--navy);border-top:1px solid rgba(42,173,168,.12);padding:28px 44px;flex-direction:column;}
+    .mob-menu.open{display:flex;}
+    .mob-menu a{font-size:.95rem;font-weight:500;color:rgba(255,255,255,.7);padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07);}
+    .mob-menu .mp{background:var(--mag);color:var(--white);text-align:center;padding:14px;border-radius:100px;font-weight:700;margin-top:16px;border:none;}
+
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 44px;}
+    .section{padding:100px 0;}
+    .s-white{background:var(--white);}
+    .s-cream{background:var(--cream);}
+    .s-navy{background:var(--navy);}
+    .kicker{font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+    .kicker::before{content:'';width:28px;height:2px;background:var(--teal);flex-shrink:0;}
+    .kicker.dim{color:rgba(255,255,255,.38);}.kicker.dim::before{background:rgba(255,255,255,.2);}
+    .sh{font-family:var(--bb);font-size:clamp(2.4rem,4vw,3.6rem);letter-spacing:.05em;line-height:.92;text-transform:uppercase;color:var(--ink);}
+    .sh.dark{color:var(--white);}
+    .script-line{font-family:var(--hur);font-size:clamp(3rem,5.5vw,5rem);color:var(--mag);line-height:.88;display:block;margin-top:-8px;margin-left:-3px;text-shadow:0 2px 28px rgba(232,53,122,.28);margin-bottom:28px;}
+    .body-copy{font-size:.96rem;line-height:1.82;color:var(--muted);}
+    .body-copy p{margin-bottom:16px;}
+    .body-copy.dark{color:rgba(255,255,255,.58);}
+
+    /* HERO */
+    .hero{background:var(--navy);padding:140px 44px 90px;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(42,173,168,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(42,173,168,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;}
+    .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 50%,rgba(42,173,168,.12) 0%,transparent 65%);pointer-events:none;}
+    .hero-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:72px;align-items:center;}
+    .hero-eyebrow{font-size:.62rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+    .hero-eyebrow::before{content:'';width:24px;height:2px;background:var(--teal);}
+    .hero-h1-top{font-family:var(--bb);font-size:clamp(3.2rem,6.5vw,5.8rem);letter-spacing:.04em;line-height:.88;color:var(--white);text-transform:uppercase;display:block;}
+    .hero-script{font-family:var(--hur);font-size:clamp(3.8rem,7.5vw,6.8rem);color:var(--mag);line-height:.88;display:block;margin-top:-8px;text-shadow:0 3px 32px rgba(232,53,122,.4);}
+    .hero-sub{font-size:1rem;color:rgba(255,255,255,.52);line-height:1.8;margin-top:24px;max-width:480px;}
+    .hero-sub strong{color:rgba(255,255,255,.82);}
+    .hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+    .btn-mag{background:var(--mag);color:var(--white);font-family:var(--bb);font-size:1.1rem;letter-spacing:.08em;padding:16px 36px;border-radius:100px;transition:background var(--ease),transform var(--ease);box-shadow:0 6px 24px rgba(232,53,122,.35);}
+    .btn-mag:hover{background:var(--mag-dark);transform:translateY(-2px);}
+    .btn-ghost{border:1.5px solid rgba(42,173,168,.3);color:rgba(255,255,255,.6);font-size:.86rem;font-weight:600;padding:15px 28px;border-radius:100px;transition:all var(--ease);}
+    .btn-ghost:hover{border-color:var(--teal);color:var(--white);}
+
+    /* HERO PRICE CARD */
+    .hero-card{background:rgba(255,255,255,.04);border:1.5px solid rgba(42,173,168,.18);border-radius:20px;padding:36px 30px;position:relative;overflow:hidden;}
+    .hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--mag));}
+    .plan-toggle{display:flex;background:rgba(255,255,255,.06);border-radius:100px;padding:4px;margin-bottom:28px;}
+    .plan-btn{flex:1;text-align:center;padding:8px 12px;border-radius:100px;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,.4);cursor:pointer;transition:all var(--ease);border:none;background:none;}
+    .plan-btn.active{background:var(--teal);color:var(--white);}
+    .plan-content{display:none;}
+    .plan-content.active{display:block;}
+    .plan-name{font-family:var(--bb);font-size:1.1rem;letter-spacing:.06em;color:var(--white);margin-bottom:4px;}
+    .plan-price{font-family:var(--bb);font-size:3.2rem;letter-spacing:.04em;color:var(--white);line-height:1;margin-bottom:4px;}
+    .plan-price span{font-size:.82rem;color:rgba(255,255,255,.35);font-family:var(--dm);font-weight:400;}
+    .plan-desc{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.65;margin-bottom:20px;}
+    .plan-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:24px;}
+    .plan-list li{display:flex;align-items:flex-start;gap:9px;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5;}
+    .plan-list li::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0;}
+    .buy-btn{display:block;background:var(--mag);color:var(--white);font-family:var(--bb);font-size:1.1rem;letter-spacing:.08em;padding:15px;border-radius:100px;text-align:center;transition:background var(--ease),transform var(--ease);box-shadow:0 6px 20px rgba(232,53,122,.3);}
+    .buy-btn:hover{background:var(--mag-dark);transform:translateY(-2px);}
+    .card-note{font-size:.7rem;color:rgba(255,255,255,.25);text-align:center;margin-top:12px;}
+
+    /* WHO IT'S FOR */
+    .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px;}
+    .who-card{background:var(--white);border:1px solid rgba(42,173,168,.15);border-radius:14px;padding:24px 22px;transition:border-color var(--ease),transform var(--ease);}
+    .who-card:hover{border-color:var(--teal);transform:translateY(-3px);}
+    .who-icon{font-size:1.6rem;margin-bottom:12px;}
+    .who-card h4{font-family:var(--bb);font-size:1rem;letter-spacing:.05em;color:var(--ink);margin-bottom:6px;}
+    .who-card p{font-size:.84rem;color:var(--muted);line-height:1.68;}
+
+    /* WHAT'S INSIDE */
+    .sections-list{display:flex;flex-direction:column;gap:12px;margin-top:36px;}
+    .sl-item{background:rgba(255,255,255,.04);border:1px solid rgba(42,173,168,.14);border-radius:12px;padding:20px 22px;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;transition:border-color var(--ease);}
+    .sl-item:hover{border-color:rgba(42,173,168,.35);}
+    .sl-num{font-family:var(--bb);font-size:1.8rem;letter-spacing:.04em;color:var(--teal);line-height:1;}
+    .sl-item h4{font-family:var(--bb);font-size:1rem;letter-spacing:.05em;color:var(--white);margin-bottom:4px;}
+    .sl-item p{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.65;}
+
+    /* COMPARISON */
+    .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px;}
+    .compare-card{border-radius:16px;padding:32px 28px;}
+    .compare-card.without{background:rgba(232,53,122,.06);border:1.5px solid rgba(232,53,122,.18);}
+    .compare-card.with{background:rgba(42,173,168,.07);border:1.5px solid rgba(42,173,168,.22);}
+    .compare-card h4{font-family:var(--bb);font-size:1rem;letter-spacing:.06em;margin-bottom:16px;}
+    .compare-card.without h4{color:var(--mag);}
+    .compare-card.with h4{color:var(--teal);}
+    .compare-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+    .compare-list li{font-size:.85rem;color:var(--muted);line-height:1.6;display:flex;align-items:flex-start;gap:8px;}
+    .compare-list li .icon{flex-shrink:0;}
+
+    /* PROCESS */
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;}
+    .pg{background:var(--white);border:1px solid rgba(42,173,168,.12);border-radius:14px;padding:28px 22px;text-align:center;position:relative;}
+    .pg-num{font-family:var(--bb);font-size:2.4rem;letter-spacing:.04em;color:rgba(42,173,168,.2);line-height:1;margin-bottom:12px;}
+    .pg h4{font-family:var(--bb);font-size:.95rem;letter-spacing:.05em;color:var(--ink);margin-bottom:8px;}
+    .pg p{font-size:.8rem;color:var(--muted);line-height:1.65;}
+
+    /* CTA BAND */
+    .cta-band{background:var(--mag);padding:80px 0;position:relative;overflow:hidden;}
+    .cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 85% 50%,rgba(255,255,255,.08) 0%,transparent 55%);}
+    .cta-ghost{position:absolute;bottom:-40px;right:-10px;font-family:var(--bb);font-size:clamp(100px,15vw,180px);letter-spacing:.04em;color:rgba(255,255,255,.04);line-height:1;pointer-events:none;user-select:none;}
+    .cta-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:0 44px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+    .cta-top{font-family:var(--bb);font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.05em;line-height:.9;color:var(--white);text-transform:uppercase;display:block;}
+    .cta-script{font-family:var(--hur);font-size:clamp(2.8rem,5vw,4.6rem);color:var(--white);line-height:.88;display:block;margin-top:-6px;margin-left:-3px;}
+    .cta-sub{font-size:.95rem;color:rgba(255,255,255,.75);margin-top:14px;max-width:460px;line-height:1.78;}
+    .btn-white{background:var(--white);color:var(--mag);font-weight:700;font-size:.88rem;letter-spacing:.04em;padding:17px 40px;border-radius:100px;white-space:nowrap;transition:transform var(--ease),box-shadow var(--ease);box-shadow:0 4px 20px rgba(0,0,0,.15);}
+    .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2);}
+
+    footer{background:var(--navy);padding:68px 0 36px;border-top:1px solid rgba(42,173,168,.1);}
+    .foot-grid{max-width:var(--max);margin:0 auto;padding:0 44px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+    .fb .wm{font-family:var(--bb);font-size:1.6rem;letter-spacing:.06em;color:var(--white);}
+    .fb .wm span{color:var(--teal);}
+    .fb .sub{display:block;font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px;}
+    .fb p{font-size:.83rem;color:rgba(255,255,255,.42);line-height:1.78;max-width:300px;}
+    .fc h4{font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:16px;}
+    .fl{list-style:none;display:flex;flex-direction:column;gap:11px;}
+    .fl a{font-size:.84rem;color:rgba(255,255,255,.5);transition:color var(--ease);}
+    .fl a:hover{color:var(--teal);}
+    .foot-bot{max-width:var(--max);margin:0 auto;padding:22px 44px 0;border-top:1px solid rgba(255,255,255,.05);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .foot-bot p{font-size:.74rem;color:rgba(255,255,255,.25);}
+    .soc{display:flex;gap:8px;}
+    .sb{width:32px;height:32px;border-radius:8px;border:1px solid rgba(42,173,168,.18);display:flex;align-items:center;justify-content:center;font-size:.64rem;font-weight:700;color:rgba(255,255,255,.35);cursor:pointer;transition:all var(--ease);}
+    .sb:hover{border-color:var(--teal);color:var(--teal);}
+
+    @media(max-width:960px){
+      nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}
+      .hero{padding:120px 24px 60px;}
+      .hero-inner{grid-template-columns:1fr;gap:40px;}
+      .wrap{padding:0 24px;}
+      .who-grid{grid-template-columns:1fr;}
+      .compare-grid{grid-template-columns:1fr;}
+      .process-grid{grid-template-columns:1fr 1fr;}
+      .foot-grid{grid-template-columns:1fr;gap:32px;}
+      .foot-grid,.foot-bot,.cta-inner{padding-left:24px;padding-right:24px;}
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Product","name":"DIY SEO SOP","description":"A custom SEO audit and step-by-step action plan for your small business. Know exactly what to fix, in what order, to start showing up on Google.","offers":[{"@type":"Offer","name":"DIY SOP Only","price":"197","priceCurrency":"USD"},{"@type":"Offer","name":"SOP + Strategy Call","price":"297","priceCurrency":"USD"}],"provider":{"@type":"LocalBusiness","name":"Visible. by Erika Poindexter","url":"https://stayvisible.co"}}
+  </script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand"><span class="wm">VISIBLE<span>.</span></span><span class="sub">by Erika Poindexter</span></div>
+  <ul class="nav-links">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/work">Portfolio</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://therealerikap.myflodesk.com/visiblecontact" class="nav-pill" target="_blank">Book a Free Call</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="/services">Services</a><a href="/work">Portfolio</a>
+  <a href="/about">About</a><a href="/blog">Blog</a>
+  <a href="https://therealerikap.myflodesk.com/visiblecontact" class="mp" target="_blank">Book a Free Call →</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow fu">New — DIY Product</div>
+      <span class="hero-h1-top fu d1">YOUR CUSTOM</span>
+      <span class="hero-h1-top fu d1">SEO ROADMAP.</span>
+      <span class="hero-script fu d2">done for you.</span>
+      <p class="hero-sub fu d3">A complete audit of your online presence + a step-by-step action plan built specifically for your business. <strong>Your skill level is not the problem — visibility is.</strong> Now you have the exact playbook to fix it yourself.</p>
+      <div class="hero-actions fu d4">
+        <a href="#pricing" class="btn-mag">GET MY SOP →</a>
+        <a href="#whats-inside" class="btn-ghost">See what's inside</a>
+      </div>
+    </div>
+
+    <!-- PRICING CARD -->
+    <div class="hero-card fu d2" id="pricing">
+      <div class="plan-toggle">
+        <button class="plan-btn active" onclick="switchPlan('diy', this)">DIY ONLY</button>
+        <button class="plan-btn" onclick="switchPlan('call', this)">+ STRATEGY CALL</button>
+      </div>
+
+      <div class="plan-content active" id="plan-diy">
+        <div class="plan-name">DIY SOP</div>
+        <div class="plan-price">$197<span> one-time</span></div>
+        <p class="plan-desc">Your full audit + action plan delivered as a branded PDF. You implement it yourself on your schedule.</p>
+        <ul class="plan-list">
+          <li>Complete audit of your online presence</li>
+          <li>Priority matrix — what to fix first</li>
+          <li>Keyword targets for your city + service</li>
+          <li>Google Business Profile action plan</li>
+          <li>Website SEO fixes (step-by-step)</li>
+          <li>Review strategy + ready-to-use scripts</li>
+          <li>Citation + directory checklist</li>
+          <li>Monthly maintenance schedule</li>
+          <li>Quick wins you can do this week</li>
+        </ul>
+        <a href="https://buy.stripe.com/00weVddsTcQWgWOdRsew807" class="buy-btn">GET MY SOP — $197 →</a>
+        <p class="card-note">Delivered within 5 business days of intake</p>
+      </div>
+
+      <div class="plan-content" id="plan-call">
+        <div class="plan-name">SOP + STRATEGY CALL</div>
+        <div class="plan-price">$297<span> one-time</span></div>
+        <p class="plan-desc">Everything in the DIY SOP plus a 30-minute call with Erika to walk through your plan, answer questions, and prioritize together.</p>
+        <ul class="plan-list">
+          <li>Everything in the DIY SOP</li>
+          <li>30-minute 1:1 strategy call with Erika</li>
+          <li>Walk through your audit findings together</li>
+          <li>Prioritize your specific quick wins</li>
+          <li>Q&A — ask anything about your plan</li>
+          <li>Recording of the call sent to you</li>
+        </ul>
+        <a href="https://buy.stripe.com/7sY7sLdsT5ou35Y8x8ew806" class="buy-btn">GET SOP + CALL — $297 →</a>
+        <p class="card-note">Call scheduled within 7 days of intake</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO IT'S FOR -->
+<section class="section s-white">
+  <div class="wrap">
+    <div class="kicker fu">Is this for you?</div>
+    <span class="sh fu d1">WHO THIS</span>
+    <span class="script-line fu d1">is built for.</span>
+    <div class="who-grid">
+      <div class="who-card fu d1">
+        <div class="who-icon">✂️</div>
+        <h4>SKILLED TRADES + MAKERS</h4>
+        <p>Seamstresses, tailors, woodworkers, detailers, upholsterers — people whose work speaks for itself but Google has no idea they exist.</p>
+      </div>
+      <div class="who-card fu d2">
+        <div class="who-icon">✨</div>
+        <h4>WELLNESS + BEAUTY</h4>
+        <p>Solo estheticians, massage therapists, lash techs — booked on referrals alone and ready to start showing up when new clients search.</p>
+      </div>
+      <div class="who-card fu d3">
+        <div class="who-icon">🎵</div>
+        <h4>TEACHERS + TUTORS</h4>
+        <p>Music teachers, tutors, coaches — years of experience and a full roster of happy clients, none of whom found them on Google.</p>
+      </div>
+      <div class="who-card fu d4">
+        <div class="who-icon">🍽️</div>
+        <h4>FOOD + HOSPITALITY</h4>
+        <p>Restaurants, caterers, food trucks — packed on Friday nights but invisible to someone searching for you on a Tuesday.</p>
+      </div>
+      <div class="who-card fu d1">
+        <div class="who-icon">🏡</div>
+        <h4>HOME + LOCAL SERVICES</h4>
+        <p>Cleaners, landscapers, handypeople, pet sitters — the backbone of every local neighborhood, mostly invisible online.</p>
+      </div>
+      <div class="who-card fu d2">
+        <div class="who-icon">📚</div>
+        <h4>SPECIALTY EDUCATION</h4>
+        <p>Alternative schools, learning programs, specialized tutoring — differentiated concepts that parents can't find because Google doesn't know they exist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="section s-navy" id="whats-inside">
+  <div class="wrap">
+    <div class="kicker dim fu">Every section</div>
+    <span class="sh dark fu d1">WHAT'S IN</span>
+    <span class="script-line fu d1">your SOP.</span>
+    <div class="sections-list">
+      <div class="sl-item fu d1">
+        <div class="sl-num">01</div>
+        <div><h4>THE AUDIT — BUSINESS AT A GLANCE</h4><p>A complete snapshot of your current online presence across Google, Yelp, Facebook, and key directories. What you have. What's missing. What's broken. Before anything else, you need to see the full picture.</p></div>
+      </div>
+      <div class="sl-item fu d2">
+        <div class="sl-num">02</div>
+        <div><h4>PRIORITY MATRIX — START HERE</h4><p>Every fix ranked Critical, High, Medium, or Later with a time estimate for each. No more guessing what matters most. Work through this list in order and you'll move the needle faster than trying to fix everything at once.</p></div>
+      </div>
+      <div class="sl-item fu d3">
+        <div class="sl-num">03</div>
+        <div><h4>KEYWORD FIXES</h4><p>The exact search terms your ideal clients are typing right now — with instructions on where to use them on your site. Includes language fixes, page title formats, and meta description templates specific to your business and city.</p></div>
+      </div>
+      <div class="sl-item fu d4">
+        <div class="sl-num">04</div>
+        <div><h4>GOOGLE BUSINESS PROFILE — COMPLETE ACTION PLAN</h4><p>Step-by-step instructions to claim, complete, and optimize your GBP. Ready-to-paste business description written for your specific business. Service list to add. Photo types to shoot. Weekly post templates you can copy.</p></div>
+      </div>
+      <div class="sl-item fu d1">
+        <div class="sl-num">05</div>
+        <div><h4>REVIEW STRATEGY</h4><p>Word-for-word text scripts and in-person scripts for asking current clients for Google reviews — without feeling awkward about it. Plus response templates for 5-star reviews and negative reviews.</p></div>
+      </div>
+      <div class="sl-item fu d2">
+        <div class="sl-num">06</div>
+        <div><h4>WEBSITE SEO FIXES</h4><p>Specific fixes for your site — H1 structure, meta titles, schema markup, location pages, blog strategy, and homepage quick wins. Includes platform-specific instructions (Wix, Squarespace, WordPress, or custom) so you're not left guessing.</p></div>
+      </div>
+      <div class="sl-item fu d3">
+        <div class="sl-num">07</div>
+        <div><h4>LOCAL CITATIONS</h4><p>Every directory where your business should be listed — with your current status and exactly what to do on each one. Includes your NAP (Name, Address, Phone) in the exact format to use everywhere so Google trusts you.</p></div>
+      </div>
+      <div class="sl-item fu d4">
+        <div class="sl-num">08</div>
+        <div><h4>MONTHLY MAINTENANCE SCHEDULE</h4><p>A weekly, monthly, and quarterly checklist so visibility doesn't slip after you've built it. Includes a tracking table to record your numbers every month and watch the progress stack up.</p></div>
+      </div>
+      <div class="sl-item fu d1">
+        <div class="sl-num">09</div>
+        <div><h4>QUICK WINS — DO THESE THIS WEEK</h4><p>The highest-impact, lowest-effort fixes you can do immediately — often within 30 minutes each. Most clients see a measurable difference within 30 days just from the quick wins section alone.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WITHOUT vs WITH -->
+<section class="section s-white">
+  <div class="wrap">
+    <div class="kicker fu">The difference</div>
+    <span class="sh fu d1">WITHOUT IT</span>
+    <span class="script-line fu d1">vs. with it.</span>
+    <div class="compare-grid">
+      <div class="compare-card without fu d1">
+        <h4>WITHOUT YOUR SOP</h4>
+        <ul class="compare-list">
+          <li><span class="icon">❌</span>Guessing what to fix and in what order</li>
+          <li><span class="icon">❌</span>Google Business Profile half-filled out or wrong</li>
+          <li><span class="icon">❌</span>Showing up on page 3 while competitors own page 1</li>
+          <li><span class="icon">❌</span>Clients who would choose you finding someone else first</li>
+          <li><span class="icon">❌</span>Word of mouth as your only growth channel</li>
+          <li><span class="icon">❌</span>Spending hours on the wrong things</li>
+        </ul>
+      </div>
+      <div class="compare-card with fu d2">
+        <h4>WITH YOUR SOP</h4>
+        <ul class="compare-list">
+          <li><span class="icon">✓</span>A clear priority list — know exactly what to do first</li>
+          <li><span class="icon">✓</span>A fully optimized GBP pulling in local searches</li>
+          <li><span class="icon">✓</span>The right keywords on the right pages</li>
+          <li><span class="icon">✓</span>A review strategy that actually works</li>
+          <li><span class="icon">✓</span>A monthly routine that keeps you visible long-term</li>
+          <li><span class="icon">✓</span>A document you own and can hand to anyone</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section s-cream">
+  <div class="wrap">
+    <div class="kicker fu">The process</div>
+    <span class="sh fu d1">HOW IT</span>
+    <span class="script-line fu d1">works.</span>
+    <div class="process-grid">
+      <div class="pg fu d1">
+        <div class="pg-num">1</div>
+        <h4>PURCHASE + INTAKE</h4>
+        <p>Choose your plan and complete a short intake form. The more detail you give, the more specific your SOP will be.</p>
+      </div>
+      <div class="pg fu d2">
+        <div class="pg-num">2</div>
+        <h4>ERIKA AUDITS</h4>
+        <p>I review your website, Google Business Profile, social presence, and key directories. Every finding documented.</p>
+      </div>
+      <div class="pg fu d3">
+        <div class="pg-num">3</div>
+        <h4>YOUR SOP IS BUILT</h4>
+        <p>A fully custom, branded PDF is built for your specific business — not a generic template with your name swapped in.</p>
+      </div>
+      <div class="pg fu d4">
+        <div class="pg-num">4</div>
+        <h4>YOU IMPLEMENT</h4>
+        <p>Work through the priority matrix at your own pace. Most clients see movement in 30–60 days just from the quick wins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<div class="cta-band">
+  <div class="cta-ghost" aria-hidden="true">SOP</div>
+  <div class="cta-inner">
+    <div>
+      <span class="cta-top">READY TO GET</span>
+      <span class="cta-script">visible?</span>
+      <p class="cta-sub">Your skill level is not the problem — visibility is. For $197 you'll know exactly what's holding you back and exactly how to fix it.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+      <a href="https://buy.stripe.com/00weVddsTcQWgWOdRsew807" class="btn-white">GET MY SOP — $197 →</a>
+      <a href="https://buy.stripe.com/7sY7sLdsT5ou35Y8x8ew806" style="font-size:.78rem;color:rgba(255,255,255,.6);text-decoration:underline;text-underline-offset:3px;">Add a strategy call for $297 →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-grid">
+    <div class="fb"><div class="wm">VISIBLE<span>.</span></div><span class="sub">by Erika Poindexter</span><p>Websites, Google Business optimization, and done-for-you content for skilled small business owners. Placer County, CA — in-person or remotely.</p></div>
+    <div class="fc"><h4>Services</h4><ul class="fl"><li><a href="/services/stay-visible">Stay Visible</a></li><li><a href="/services/grow-visible">Grow Visible</a></li><li><a href="/services/full-visibility">Full Visibility</a></li><li><a href="/services/gmb-maximizer">GMB Maximizer</a></li><li><a href="/sop" style="color:var(--teal);">DIY SEO SOP</a></li></ul></div>
+    <div class="fc"><h4>Connect</h4><ul class="fl"><li><a href="/contact">Book a Free Call</a></li><li><a href="tel:+15303337207">(530) 333-7207</a></li><li><a href="mailto:erika@stayvisible.co">erika&#64;stayvisible.co</a></li><li><a href="/about">About Erika</a></li></ul></div>
+  </div>
+  <div class="foot-bot"><p>© 2025 Visible. by Erika Poindexter · stayvisible.co · All Rights Reserved</p><div class="soc"><div class="sb">f</div><div class="sb">in</div><div class="sb">ig</div></div></div>
+</footer>
+
+<script>
+  function toggleMenu(){document.getElementById('mobMenu').classList.toggle('open');}
+  function switchPlan(plan, btn){
+    document.querySelectorAll('.plan-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.plan-content').forEach(c=>c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('plan-'+plan).classList.add('active');
+  }
+</script>
+</body>
+</html>
